@@ -1,45 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--===================== FAVICON =====================-->
-    <link rel="shortcut icon" href="">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
     <!--===================== REMIX ICONS =================-->
-
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!--===================== CSS =========================-->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
     <title>Furnify - Responsive Furniture Website</title>
 </head>
+
 <body>
     <!--===================== HEADER ======================-->
     <header class="header" id="header">
-
+        <nav class="nav container">
+            <a href="" class="nav__logo">
+                <i class="ri-home-line"></i>Furnify
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Products</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#reviews" class="nav__link">Review</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main class="main">
         <!--===================== HOME ======================-->
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <img src="assets/img/img-4.png" alt="" class="home__img">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Discover <br> Best Furniture <br> For Your House
+                    </h1>
+                    <p class="home__description">
+                        We have 7% more reviews and our customers <br> trust on our furniture quality products.
+                    </p>
+                    <a href="#products" class="button button-flex">
+                        Explore <i class="right-arrow-right-down-line button__icon"></i>
+                    </a>
+                </div>
+                <div class="home__social">
+                    <span class="home__social-follow">Follow Us</span>
+                    <div class="home__social-links">
+                        <a href="https://www.facebook.com" class="home__social-link">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.twitter.com" class="home__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com" class="home__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!--===================== ABOUT ======================-->
+        <section class="about section container" id="about">
+            <div class="about__container grid">
+                <article class="about__card">
+                    <div class="about__circle"></div>
+                    <img src="assets/img/img-5.png" alt="" class="about__img">
+                </article>
+                <div class="about__data">
+                    <h2 class="section__title about__title">
+                        Who we are & why choose us
+                    </h2>
+                    <p class="about__description">
+                        We have over 5K unbiased reviews and our customers trust our furniture and delivery service
+                        every time.
+                    </p>
+                    <div class="about__details">
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-fill about__details-icon"></i> We always deliver on time.
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-fill about__details-icon"></i> 100% money back guaranteed.
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-fill about__details-icon"></i> We give guides to protect and care your
+                            furniture.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!--===================== PRODUCTS ======================-->
+        <section class="product section container" id="products">
+            <h2 class="section__title-center">
+                Our Products
+            </h2>
+            <p class="product__description">
+                Here are some selected items from our showroom. <br> Buy and enjoy best quality products.
+            </p>
+            <div class="product__container grid">
+                <article class="product__card">
+                    <div class="product__circle"></div>
+                    <img src="assets/img/img-2.png" alt="" class="product__img">
+                    <h3 class="product__title">Oakly Drawer</h3>
+                    <span class="product__price">$40</span>
+                    <button class="button-flex product__button">
+                        <i class="ri-shopping-bag-line"></i>
+                    </button>
+                </article>
+                <article class="product__card">
+                    <div class="product__circle"></div>
+                    <img src="assets/img/img-3.png" alt="" class="product__img">
+                    <h3 class="product__title">Oakly Drawer</h3>
+                    <span class="product__price">$50</span>
+                    <button class="button-flex product__button">
+                        <i class="ri-shopping-bag-line"></i>
+                    </button>
+                </article>
+                <article class="product__card">
+                    <div class="product__circle"></div>
+                    <img src="assets/img/img-1.png" alt="" class="product__img">
+                    <h3 class="product__title">Oakly Table</h3>
+                    <span class="product__price">$60</span>
+                    <button class="button-flex product__button">
+                        <i class="ri-shopping-bag-line"></i>
+                    </button>
+                </article>
+            </div>
+        </section>
 
         <!--===================== REVIEWS ======================-->
+        <section class="review container section" id="reviews">
+            <div class="review__container grid">
+                <img src="assets/img/review-img.jpg" alt="" class="review__img">
+                <div class="review__data">
+                    <h2 class="section__title-center review__title">
+                        Reviews
+                    </h2>
+                    <p class="review__description">
+                        Why customers choose furnify to make their interior looks better
+                    </p>
+                    <article class="review__card">
+                        <div class="review__circle"></div>
+                        <div class="review__rectangle"></div>
+                        <div class="review__punctuation">,,</div>
+                        <h3 class="review__detail">
+                            Furnify is one of the best furniture shops to discover the ideal furniture for my house.
+                        </h3>
+                        <span class="review__person">Anjelica Lee</span>
+                    </article>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!--===================== FOOTER ======================-->
     <footer class="footer section">
-
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <i class="ri-home-line"></i>Furnify
+                </a>
+                <h3 class="footer__title">
+                    Subscribe to our newsletter <br> to stay update
+                </h3>
+                <div class="footer__subscribe">
+                    <input type="email" placeholder="Enter your email" class="footer__input">
+                    <button class="button button-flex footer__button">
+                        Subscribe
+                        <i class="ri-arrow-right-up-line button__icon"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Our Address</h3>
+                <ul class="footer__data">
+                    <li class="footer__information">1234 - USA
+                    </li>
+                    <li class="footer__information">California
+                    </li>
+                    <li class="footer__information">123-456-789
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Contact Us</h3>
+                <ul class="footer__data">
+                    <li class="footer__information">+999 888 777</li>
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com" class="footer__social-link">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.twitter.com" class="footer__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com" class="footer__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                    </div>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    We accept all credit cards
+                </h3>
+                <div class="footer__cards">
+                    <img src="assets/img/card1.png" alt="" class="footer__card">
+                    <img src="assets/img/card2.png" alt="" class="footer__card">
+                    <img src="assets/img/card3.png" alt="" class="footer__card">
+                    <img src="assets/img/card4.png" alt="" class="footer__card">
+                </div>
+            </div>
+        </div>
+        <p class="footer__copy">&#169; LoC. All rigths reserved</p>
     </footer>
 
     <!--===================== SCROLL UP ======================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-fill scrollup__icon"></i>
+    </a>
 
     <!--===================== SCROLL REVEAL ======================-->
-    <script src=""></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
 
     <!--===================== MAIN JS ======================-->
-    <script src=""></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
